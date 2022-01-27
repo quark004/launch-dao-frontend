@@ -1,0 +1,77 @@
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.explore-array {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* overflow: scroll; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+
+  display: grid;
+  /* grid-template-columns: auto auto auto auto; */
+  grid-gap: 64px;
+}
+.explore-array::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  width: 256px;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 600ms;
+  align-items: stretch;
+  font-size: 14px;
+  margin-top: 12px;
+}
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 99, 132, 1);
+}
+
+.title {
+  margin: auto;
+  font-weight: 700;
+}
+
+.owner {
+  font-weight: 300;
+  margin-top: 8px;
+  display: flex;
+}
+
+.supply {
+  font-weight: 300;
+  display: flex;
+}
+
+.address {
+  margin: auto;
+  font-weight: 700;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.copy {
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  line-height: 0;
+}
